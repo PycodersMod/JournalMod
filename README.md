@@ -318,3 +318,8 @@ v2.0.0 更适合维护长篇日志内容。章节名、章节前言、书页名�
 - 要直接使用新版默认配置，请删除旧的已生成配置文件后重新启动游戏。
 - 如果已经自定义过日志内容，请手动迁移到新的结构。
 - 旧的 `PageId` 机制仍然存在，但显示页码会根据章节和自动分页结果重新计算。
+## License
+
+本项目采用 MIT License，详见 [LICENSE](./LICENSE)。
+
+本仓库的 Gradle Wrapper 保留其随附的 Apache-2.0 许可，详见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。
