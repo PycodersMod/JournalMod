@@ -1,5 +1,7 @@
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.nio.charset.StandardCharsets
+import java.util.Base64
 
 plugins {
     id("eclipse")
@@ -19,6 +21,12 @@ val forge_version: String by extra
 val forge_version_range: String by extra
 val loader_version_range: String by extra
 
+val pycodersRunDir = file(providers.gradleProperty("pycodersRuntimeDir").orElse("../../runtime/legacy-import/JournalMod/run").get())
+fun decodeArgs(name: String): List<String> = providers.gradleProperty(name).orNull?.takeIf { it.isNotEmpty() }?.split('.')?.map { if (it == "_") "" else String(Base64.getDecoder().decode(it), StandardCharsets.UTF_8) } ?: emptyList()
+val pycodersGameArgs = decodeArgs("pycodersGameArgsB64")
+val pycodersJavaArgs = decodeArgs("pycodersJavaArgsB64")
+val pycodersUsername = providers.gradleProperty("pycodersUsername").orElse("Dev").get()
+
 base {
     archivesName.set(mod_id)
     group = mod_group_id
@@ -36,7 +44,10 @@ minecraft {
     
     runs {
         create("client") {
-            workingDirectory(project.file("run").absolutePath)
+            workingDirectory(pycodersRunDir)
+            args("--username", pycodersUsername)
+            pycodersGameArgs.forEach { args(it) }
+            pycodersJavaArgs.forEach { jvmArg(it) }
             property("forge.logging.markers", "REGISTRIES")
             property("forge.logging.console.level", "debug")
             property("forge.enabledGameTestNamespaces", mod_id)
@@ -49,7 +60,9 @@ minecraft {
         }
         
         create("server") {
-            workingDirectory(project.file("run").absolutePath)
+            workingDirectory(pycodersRunDir)
+            pycodersGameArgs.forEach { args(it) }
+            pycodersJavaArgs.forEach { jvmArg(it) }
             property("forge.logging.markers", "REGISTRIES")
             property("forge.logging.console.level", "debug")
             property("forge.enabledGameTestNamespaces", mod_id)
@@ -62,7 +75,7 @@ minecraft {
         }
         
         create("data") {
-            workingDirectory(project.file("run").absolutePath)
+            workingDirectory(pycodersRunDir)
             property("forge.logging.markers", "REGISTRIES")
             property("forge.logging.console.level", "debug")
             

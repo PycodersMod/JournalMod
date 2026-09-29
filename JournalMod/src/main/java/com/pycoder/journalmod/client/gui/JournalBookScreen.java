@@ -1,8 +1,8 @@
-package com.journalmod.client.gui;
+package com.pycoder.journalmod.client.gui;
 
-import com.journalmod.JournalMod;
-import com.journalmod.config.ModConfig;
-import com.journalmod.item.JournalBookItem;
+import com.pycoder.journalmod.JournalMod;
+import com.pycoder.journalmod.config.ModConfig;
+import com.pycoder.journalmod.item.JournalBookItem;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.GameNarrator;

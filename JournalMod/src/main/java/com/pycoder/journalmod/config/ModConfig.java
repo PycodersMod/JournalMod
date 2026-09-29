@@ -1,4 +1,4 @@
-package com.journalmod.config;
+package com.pycoder.journalmod.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.ConfigValue;

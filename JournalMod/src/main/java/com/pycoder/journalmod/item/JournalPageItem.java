@@ -1,6 +1,6 @@
-package com.journalmod.item;
+package com.pycoder.journalmod.item;
 
-import com.journalmod.config.ModConfig;
+import com.pycoder.journalmod.config.ModConfig;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;

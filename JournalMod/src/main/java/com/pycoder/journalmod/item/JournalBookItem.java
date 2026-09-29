@@ -1,8 +1,8 @@
-package com.journalmod.item;
+package com.pycoder.journalmod.item;
 
-import com.journalmod.config.ModConfig;
-import com.journalmod.network.ModMessages;
-import com.journalmod.network.OpenJournalBookPacket;
+import com.pycoder.journalmod.config.ModConfig;
+import com.pycoder.journalmod.network.ModMessages;
+import com.pycoder.journalmod.network.OpenJournalBookPacket;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;

@@ -1,4 +1,4 @@
-package com.journalmod.config;
+package com.pycoder.journalmod.config;
 
 import net.minecraftforge.fml.loading.FMLPaths;
 import org.slf4j.Logger;

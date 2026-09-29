@@ -1,6 +1,6 @@
-package com.journalmod.network;
+package com.pycoder.journalmod.network;
 
-import com.journalmod.client.gui.JournalBookScreen;
+import com.pycoder.journalmod.client.gui.JournalBookScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.item.ItemStack;

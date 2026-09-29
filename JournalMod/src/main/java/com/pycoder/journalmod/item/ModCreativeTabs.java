@@ -1,6 +1,6 @@
-package com.journalmod.item;
+package com.pycoder.journalmod.item;
 
-import com.journalmod.JournalMod;
+import com.pycoder.journalmod.JournalMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

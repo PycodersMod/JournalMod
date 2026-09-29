@@ -1,6 +1,6 @@
-package com.journalmod.network;
+package com.pycoder.journalmod.network;
 
-import com.journalmod.JournalMod;
+import com.pycoder.journalmod.JournalMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.network.NetworkRegistry;

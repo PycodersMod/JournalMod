@@ -1,6 +1,6 @@
-package com.journalmod.item;
+package com.pycoder.journalmod.item;
 
-import com.journalmod.JournalMod;
+import com.pycoder.journalmod.JournalMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

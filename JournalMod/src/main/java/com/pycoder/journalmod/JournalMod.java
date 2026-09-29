@@ -1,10 +1,10 @@
-package com.journalmod;
+package com.pycoder.journalmod;
 
-import com.journalmod.config.ModConfig;
-import com.journalmod.config.ConfigFileFormatter;
-import com.journalmod.item.ModCreativeTabs;
-import com.journalmod.item.ModItems;
-import com.journalmod.network.ModMessages;
+import com.pycoder.journalmod.config.ModConfig;
+import com.pycoder.journalmod.config.ConfigFileFormatter;
+import com.pycoder.journalmod.item.ModCreativeTabs;
+import com.pycoder.journalmod.item.ModItems;
+import com.pycoder.journalmod.network.ModMessages;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
