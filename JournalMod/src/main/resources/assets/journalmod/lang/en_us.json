@@ -1,0 +1,20 @@
+{
+  "item.journalmod.journal_book": "Journal Book",
+  "item.journalmod.journal_page": "Journal Page",
+  "creativemodetab.journal_tab": "Journal Book Mod",
+  
+  "item.journalmod.journal_book.tooltip.progress": "Progress: %d/%d",
+  "item.journalmod.journal_book.tooltip.collected": "Collected pages:",
+  "item.journalmod.journal_book.tooltip.more": "...and %d more",
+  "item.journalmod.journal_book.tooltip.shift": "§7Hold Shift to see collected pages",
+  
+  "item.journalmod.journal_page.tooltip.id": "Page #%d",
+  "item.journalmod.journal_page.tooltip.hint": "§7Right-click to add to journal",
+  
+  "message.journalmod.no_journal_book": "§cNo journal book in inventory",
+  "message.journalmod.page_already_added": "§ePage already added",
+  "message.journalmod.page_added": "§aPage added",
+
+  "gui.journalmod.menu": "MENU",
+  "gui.journalmod.chapter": "Chapter %d"
+}

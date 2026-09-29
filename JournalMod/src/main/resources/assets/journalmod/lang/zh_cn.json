@@ -1,0 +1,20 @@
+{
+  "item.journalmod.journal_book": "日志书",
+  "item.journalmod.journal_page": "书页",
+  "creativemodetab.journal_tab": "日志书模组",
+  
+  "item.journalmod.journal_book.tooltip.progress": "收集进度: %d/%d",
+  "item.journalmod.journal_book.tooltip.collected": "已收集的书页:",
+  "item.journalmod.journal_book.tooltip.more": "...还有 %d 页",
+  "item.journalmod.journal_book.tooltip.shift": "§7按住Shift查看已收集书页",
+  
+  "item.journalmod.journal_page.tooltip.id": "书页 #%d",
+  "item.journalmod.journal_page.tooltip.hint": "§7右键使用添加到日志书",
+  
+  "message.journalmod.no_journal_book": "§c未持有日志书",
+  "message.journalmod.page_already_added": "§e已添加这页",
+  "message.journalmod.page_added": "§a已添加书页",
+
+  "gui.journalmod.menu": "目录",
+  "gui.journalmod.chapter": "第%d章"
+}
